@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="js/product.js" ></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="#">MUM golden Dome Market:::SRM System</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">| Product |<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">| Supplier |</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <label for="productNumber">Hello! </label>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Out</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <div class="container">
+        <h1>New Product Form</h1>  
+        <form action="#" method="post">
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="productNumber">Product Number</label>
+                    <input class="form-control" type="number" id="productNumber" name="productNumber">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="quantityInStock">Quantity In Stock</label>
+                    <input class="form-control" type="number" id="quantityInStock" name="quantityInStock" value="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" id="name" name="name">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="suppliers">Supplier</label>
+                    <select class="form-control" name="suppliers" id="suppliers">
+                        <option value="1">Supplier 1</option>
+                        <option value="2">Supplier 2</option>
+                        <option value="3">Supplier 3</option>
+                        <option value="4">Supplier 4</option>
+                        <option value="5">Supplier 5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-sm-6">
+                    <label for="unitPrice">Unit Price</label>
+                    <input class="form-control" type="text" id="unitPrice" name="unitPrice" pattern="\$[1-9]\d{2,}\.\d{2}" value="0.0">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="dateSupplied">Date Supplied</label>
+                    <input class="form-control" type="date" id="dateSupplied" name="dateSupplied">
+                </div>
+            </div>
+            <div class="panel-footer text-right">
+                <button type="reset" class="btn btn-outline-warning">Reset</button>
+                <input type="button" class="btn btn-outline-danger" value="Cancel">
+                <button type="submit" class="btn btn-outline-primary" onclick="printProduct();">Add Product</button>
+            </div>
+            
+        </form>    
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
